@@ -36,3 +36,14 @@
 	
 	* No funciona el sistema de consultas de datos sismologicos. Mail enviado.
 	2010 
+
+	* Logre contactar CSN, esperando datos...
+	
+# Pormientras descargar twits cercanos a eventos conocidos.
+* Eventos: 
+	1. 2014-04-01 20:46 Norte de Chile
+		Se extraeran twits de 2 días antes y 2 días despues que contengan las palabras claves (En total 5 días de twits).
+		Parece que el 2 de abril hubo un terremoto en japon q desvirtua el analisis.
+		
+	2. 2015-09-16 22:54:32 48km W of Illapel, Chile
+	

@@ -1,0 +1,5 @@
+Schema twit:
+	username;date;retweets;favorites;text;geo;mentions;hashtags;id;permalink
+
+Schema sismologia:
+	time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
