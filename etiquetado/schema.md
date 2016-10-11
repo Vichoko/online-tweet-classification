@@ -30,7 +30,7 @@
 
 ## Atributos relevantes:
 	* time: yyyy-mm-dd'T'hh:mm:ss.sss'Z'
-	* mag: Float, Righter
+	* mag: Float, Richter
 	* depth: Float, Kms
 	* place: str
 
