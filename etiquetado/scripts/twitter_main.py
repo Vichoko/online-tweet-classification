@@ -9,6 +9,7 @@ query = 'temblor OR tembló OR temblo OR temblar OR temblando OR terremoto OR si
 # Programa ejecuta advanced search en Twitter y guarda resultados en output_got.csv
 import sys,getopt,got,datetime,codecs
 def main():
+	counter = 0
 	try:
 		tweetCriteria = got.manager.TweetCriteria()	
 		tweetCriteria.since = since
@@ -25,6 +26,8 @@ def main():
 			for t in tweets:
 				outputFile.write(('\n%s;%s;%d;%d;"%s";%s;%s;%s;"%s";%s' % (t.username, t.date.strftime("%Y-%m-%d %H:%M"), t.retweets, t.favorites, t.text, t.geo, t.mentions, t.hashtags, t.id, t.permalink)))
 			outputFile.flush();
+			print 'step number %d' % counter
+			counter += 1
 			print 'More %d saved on file...\n' % len(tweets)
 		
 		got.manager.TweetManager.getTweets(tweetCriteria, receiveBuffer)
