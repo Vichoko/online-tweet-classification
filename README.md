@@ -12,12 +12,17 @@ Para construir el clasificador se evaluará la efectividad de distintos algoritm
 
 
 # Particularidades
+
+## 1. Obtencion de datos etiquetados
 Para conseguir los datos de entrenamiento (y de prueba) se etiquetaran los datos cruzando la base de datos de eventos sismologicos del *Centro Sismologico Nacional*
-con Twits extraídos de distintas fechas. 
+con 'twits' extraídos de distintas fechas. 
 
-Se extraeran datos que contienen palabras claves ('keywords') que permiten identificar un evento sismologico en Chile como: 'temblor', 'terremoto', 'sismo'
+Se extraeran twits que contienen palabras claves ('keywords') que permiten identificar un evento sismologico en Chile como: 'temblor', 'terremoto', 'sismo'
 
-Los Twits emitidos durante el día de un evento se clasificaran como "Alerta en tiempo real", los emitidos durante días sin eventos serán etiquetados como 
+Los Twits emitidos durante el día de un evento se etiquetan como "Alerta en tiempo real", los emitidos durante días sin eventos serán etiquetados como 
 "No alerta en tiempo real".
 
 Se evaluará hacer un proceso posterior de limpieza de datos para asegurar un buen entrenamiento de los clasificadores.
+
+## 2. Entrenamiento de clasificadores
+
