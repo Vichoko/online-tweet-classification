@@ -17,7 +17,10 @@ Para construir el clasificador se evaluará la efectividad de distintos algoritm
 Para conseguir los datos de entrenamiento (y de prueba) se etiquetaran los datos cruzando la base de datos de eventos sismologicos del *Centro Sismologico Nacional*
 con 'twits' extraídos de distintas fechas. 
 
-Se extraeran twits que contienen palabras claves ('keywords') que permiten identificar un evento sismologico en Chile como: 'temblor', 'terremoto', 'sismo'
+Limitandonos a datos geologicos cercanos a Chile, tecnicamente del area que comprende :: ```Latitud -16 a -57, longitud -112 a -66```
+
+Se extraeran twits que contienen palabras claves ('keywords') que permiten identificar un evento sismologico en Chile como: 
+```'temblor', 'tembló', 'temblo', temblar', 'temblando', 'terremoto', 'sismo', '```
 
 Los Twits emitidos durante el día de un evento se etiquetan como "Alerta en tiempo real", los emitidos durante días sin eventos serán etiquetados como 
 "No alerta en tiempo real".
