@@ -37,18 +37,33 @@ hist(newdf$day, main="Histograma de Twits en torno al terremoto del 16-09-2015",
 
 
 ## Cloud of words
+# Uncomment these the first time
 #Needed <- c("tm", "SnowballC","wordcloud", "NLP")
-Needed <- c("NLP")
-install.packages(Needed, dependencies=TRUE)  
+#install.packages(Needed, dependencies=TRUE)  
 
 library(tm)
 library(SnowballC)
 library(wordcloud)
 
-twtCorpus <- Corpus(VectorSource(newdf$text))
-twtCorpus <- tm_map(twtCorpus, PlainTextDocument)
-twtCorpus <- tm_map(twtCorpus, removePunctuation)
-twtCorpus <- tm_map(twtCorpus, removeWords, stopwords('spanish'))
+query_words = c('http', 'terremoto', 'sismo', 'temblor', 
+                'temblar', 'temblando', 'temblo', 'tembló', 'sismo', 'httpwww')
+## Make a cloud before the earthquake and after
+# before
+twtCorpus_b <- Corpus(VectorSource(newdf[newdf$day < 16,]$text))
+twtCorpus_b <- tm_map(twtCorpus_b, PlainTextDocument)
+twtCorpus_b <- tm_map(twtCorpus_b, removePunctuation)
+twtCorpus_b <- tm_map(twtCorpus_b, removeWords, stopwords('spanish'))
+twtCorpus_b <- tm_map(twtCorpus_b, removeWords, query_words)
 
-twtCorpus <- tm_map(twtCorpus, stemDocument)
-wordcloud(twtCorpus, max.words = 100, random.order = FALSE)
+twtCorpus_b <- tm_map(twtCorpus_b, stemDocument)
+wordcloud(twtCorpus_b, max.words = 100, random.order = FALSE)
+
+# Make a cloud before the earthquake and after
+twtCorpus_a <- Corpus(VectorSource(newdf[newdf$day >= 16,]$text))
+twtCorpus_a <- tm_map(twtCorpus_a, PlainTextDocument)
+twtCorpus_a <- tm_map(twtCorpus_a, removePunctuation)
+twtCorpus_a <- tm_map(twtCorpus_a, removeWords, stopwords('spanish'))
+twtCorpus_a <- tm_map(twtCorpus_a, removeWords, query_words)
+
+twtCorpus_a <- tm_map(twtCorpus_a, stemDocument)
+wordcloud(twtCorpus_a, max.words = 100, random.order = FALSE)
