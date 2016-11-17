@@ -10,25 +10,25 @@ DATABASE tweet<mes><año>
 TABLE <año><mes><dia>_tweets
 
 sys_partition
-download_date
-creation_date
+download_date*
+creation_date*
 id_tweet
 blacklisted_tweet
-id_user
+id_user *
 repeated_user
-favorited
+favorited *
 truncated
 type
-lang_tweet*
-text_tweet
-rt
-rt_count
+lang_tweet *
+text_tweet *
+rt * 
+rt_count *
 rt_id
 text_rt
 quote
 quote_id
 text_quote
-has_keyword
+has_keyword *
 src_href
 src_rel
 src_text
@@ -40,7 +40,7 @@ geo_located
 geo_latitude
 geo_longitude
 place_id
-place_name
+place_namet
 place_country_code
 place_country
 place_fullname
