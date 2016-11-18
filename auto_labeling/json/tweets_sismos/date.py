@@ -6,12 +6,12 @@ class Date:
         date = string.split('T')[0].split('-')
         clock = string.split('T')[1].split(':')
 
-        self.year = date[0]
-        self.mon = date[1]
-        self.day = date[2]
-        self.hour = clock[0]
-        self.minute = clock[1]
-        self.sec = clock[2]
+        self.year = int(date[0])
+        self.month = int(date[1])
+        self.day = int(date[2])
+        self.hour = int(clock[0])
+        self.minute = int(clock[1])
+        self.sec = int(clock[2])
 
     def compare_to(self, other_date):
         ''' Devuelve 1 si esta instancia es mas vieja que la otra.

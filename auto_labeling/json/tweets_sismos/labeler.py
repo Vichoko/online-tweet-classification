@@ -4,6 +4,7 @@
 
 import json
 from date import Date
+import collections
 
 '''
 * Jun 2016 0: 2016-06-07 10:51:37 Magnitud: 6.3 Mexico
@@ -59,19 +60,59 @@ events = [{'file': "tweetsjun20160", 'event_time': "2016-06-07T10:51:37"},
 ]
 
 
-
-input_file_list = ["tweetsago20160", "tweetsago20161",
-            "tweetsjul20160", "tweetsjul20161",
-            "tweetsjun20160", "tweetsjun20160"]
+out_attr_list = ["download_date",
+    "creation_date",
+    "text_tweet",
+    "id_user",
+    "favorited",
+    "text_tweet",
+    "rt",
+    "rt_count"]
 
 row_array = []
 
 for event in events:
-    with open("C:/Users/Vichoko/Documents/GitHub/real-time-twit/auto_labeling/json/tweets_sismos/"  + event['file'] + ".json",
+    with open("C:/Users/Vichoko/Documents/GitHub/real-time-twit/auto_labeling/json/tweets_sismos/" + event['file'] + ".json",
               "r") as readfile:
         data = json.load(readfile)  # Lista de diccionarios, cada uno es una fila original
 
-    for row in data:
-        if Date(row['creation_date']).compare_to(Date(event[event_time]))
+    counter = 0
+    for tweet in data:
+        # Threshold set to 4 minutes after the event happened to label them as "Alerta en Tiempo Real"
+        event_time = Date(event['event_time'])
+        limit_date = Date(event['event_time']).sum_minutes(4)
+        tweet_date = Date(tweet['creation_date'])
+
+        if tweet_date.compare_to(event_time) < 0:
+            # Si el tweet es de antes del evento, lo ignoro
+            continue
+        elif tweet_date.compare_to(limit_date) <= 0:
+            # Si el tweet fue creado antes de la fecha limite y despues del evento, lo guardo
+            counter = 0
+
+            d = collections.OrderedDict()
+            for attr in out_attr_list:
+                d[attr] = tweet[attr]
+            d['class'] = 1
+            row_array.append(d)
+
+        else:
+            # si el twit es de despues de la fehca limite, lo ignoro y pienso en terminar esta tabla
+            counter += 1
+            if counter > 300:
+                # si he visto 300 tweets con fecha mayor a la limite corto el etiquetado (Porque tweets estan ordenados)
+                break
+
+
+j = json.dumps(row_array)
+objects_file = "test" + ".json"
+f = open(objects_file, 'w')
+print >> f, j
+print("	done")
+
+
+
+
+
 
 
