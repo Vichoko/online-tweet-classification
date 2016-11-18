@@ -1,0 +1,2261 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1479504468000,
+    "url": "http://earthquake.usgs.gov/fdsnws/event/1/query.geojson?starttime=2016-06-01%2000:00:00&endtime=2016-08-31%2023:59:59&maxlatitude=29.229&minlatitude=-57.742&maxlongitude=-44.121&minlongitude=-132.188&minmagnitude=5&orderby=time",
+    "title": "USGS Earthquakes",
+    "status": 200,
+    "api": "1.5.2",
+    "count": 56
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "50km NNW of Constitucion, Chile",
+        "time": 1472544549290,
+        "updated": 1478816303791,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006v8s",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006v8s&format=geojson",
+        "felt": 25,
+        "cdi": 4.3,
+        "mmi": 4.09,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 459,
+        "net": "us",
+        "code": "20006v8s",
+        "ids": ",us20006v8s,gcmt20160830080909,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 0.525,
+        "rms": 0.87,
+        "gap": 72,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.4 - 50km NNW of Constitucion, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.555,
+          -34.8956,
+          14.2
+        ]
+      },
+      "id": "us20006v8s"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.3,
+        "place": "35km W of Mollendo, Peru",
+        "time": 1471600150810,
+        "updated": 1475847521040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006eyx",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006eyx&format=geojson",
+        "felt": 16,
+        "cdi": 4.3,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 439,
+        "net": "us",
+        "code": "10006eyx",
+        "ids": ",us10006eyx,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,origin,phase-data,",
+        "nst": null,
+        "dmin": 2.335,
+        "rms": 0.74,
+        "gap": 138,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 5.3 - 35km W of Mollendo, Peru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.349,
+          -17.0241,
+          44.91
+        ]
+      },
+      "id": "us10006eyx"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "Southern East Pacific Rise",
+        "time": 1471546183980,
+        "updated": 1479176513040,
+        "tz": -480,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006ew5",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006ew5&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": 0,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 465,
+        "net": "us",
+        "code": "10006ew5",
+        "ids": ",us10006ew5,gcmt20160818184944,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,geoserve,losspager,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 29.649,
+        "rms": 0.67,
+        "gap": 50,
+        "magType": "mwc",
+        "type": "earthquake",
+        "title": "M 5.5 - Southern East Pacific Rise"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2773,
+          -55.7274,
+          10
+        ]
+      },
+      "id": "us10006ew5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6,
+        "place": "Southern East Pacific Rise",
+        "time": 1471543783940,
+        "updated": 1479176513040,
+        "tz": -480,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006esj",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006esj&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": 0,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 554,
+        "net": "us",
+        "code": "10006esj",
+        "ids": ",us10006esj,gcmt20160818180943,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,geoserve,losspager,moment-tensor,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 27.905,
+        "rms": 0.95,
+        "gap": 50,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.0 - Southern East Pacific Rise"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2414,
+          -55.9035,
+          10
+        ]
+      },
+      "id": "us10006esj"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "112km WNW of Iquique, Chile",
+        "time": 1471371452230,
+        "updated": 1479176511040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006e6x",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006e6x&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 400,
+        "net": "us",
+        "code": "10006e6x",
+        "ids": ",us10006e6x,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,moment-tensor,origin,phase-data,",
+        "nst": null,
+        "dmin": 1.041,
+        "rms": 1.09,
+        "gap": 136,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.1 - 112km WNW of Iquique, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0971,
+          -19.7581,
+          17.61
+        ]
+      },
+      "id": "us10006e6x"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "26km E of Calama, Chile",
+        "time": 1471316318270,
+        "updated": 1479176510040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006e1n",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006e1n&format=geojson",
+        "felt": 9,
+        "cdi": 3.8,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 452,
+        "net": "us",
+        "code": "10006e1n",
+        "ids": ",us10006e1n,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,origin,phase-data,",
+        "nst": null,
+        "dmin": 0.241,
+        "rms": 0.89,
+        "gap": 28,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.4 - 26km E of Calama, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.6772,
+          -22.5053,
+          107.19
+        ]
+      },
+      "id": "us10006e1n"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "39km N of Lluta, Peru",
+        "time": 1471229940840,
+        "updated": 1479176509040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006du3",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006du3&format=geojson",
+        "felt": 22,
+        "cdi": 6.8,
+        "mmi": 4.35,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 480,
+        "net": "us",
+        "code": "10006du3",
+        "ids": ",us10006du3,gcmt20160815025859,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 3.095,
+        "rms": 0.85,
+        "gap": 95,
+        "magType": "mwb",
+        "type": "earthquake",
+        "title": "M 5.5 - 39km N of Lluta, Peru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.0092,
+          -15.6542,
+          20
+        ]
+      },
+      "id": "us10006du3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "101km E of Iquique, Chile",
+        "time": 1471181322520,
+        "updated": 1479176509040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006dri",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006dri&format=geojson",
+        "felt": 3,
+        "cdi": 2.7,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 385,
+        "net": "us",
+        "code": "10006dri",
+        "ids": ",us10006dri,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,origin,phase-data,",
+        "nst": null,
+        "dmin": 0.529,
+        "rms": 0.94,
+        "gap": 43,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 5.0 - 101km E of Iquique, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.1698,
+          -20.2005,
+          100
+        ]
+      },
+      "id": "us10006dri"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "67km WSW of Santiago, Peru",
+        "time": 1470683003370,
+        "updated": 1477451422040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006c4a",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006c4a&format=geojson",
+        "felt": 4,
+        "cdi": 2.7,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 401,
+        "net": "us",
+        "code": "10006c4a",
+        "ids": ",us10006c4a,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,origin,phase-data,",
+        "nst": null,
+        "dmin": 2.58,
+        "rms": 0.78,
+        "gap": 130,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.1 - 67km WSW of Santiago, Peru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.2455,
+          -14.5173,
+          10
+        ]
+      },
+      "id": "us10006c4a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "46km W of Illapel, Chile",
+        "time": 1470659072820,
+        "updated": 1477451422040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006c1k",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006c1k&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 385,
+        "net": "us",
+        "code": "10006c1k",
+        "ids": ",us10006c1k,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,origin,phase-data,",
+        "nst": null,
+        "dmin": 0.676,
+        "rms": 0.77,
+        "gap": 113,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 5.0 - 46km W of Illapel, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6537,
+          -31.5865,
+          29.95
+        ]
+      },
+      "id": "us10006c1k"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "Northern Mid-Atlantic Ridge",
+        "time": 1470419371220,
+        "updated": 1478816272166,
+        "tz": -180,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006ag5",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006ag5&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 449,
+        "net": "us",
+        "code": "10006ag5",
+        "ids": ",us10006ag5,gcmt20160805174931,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,moment-tensor,origin,phase-data,",
+        "nst": null,
+        "dmin": 12.007,
+        "rms": 0.85,
+        "gap": 45,
+        "magType": "mwc",
+        "type": "earthquake",
+        "title": "M 5.4 - Northern Mid-Atlantic Ridge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.1055,
+          14.6093,
+          10
+        ]
+      },
+      "id": "us10006ag5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.2,
+        "place": "49km WSW of La Quiaca, Argentina",
+        "time": 1470320112930,
+        "updated": 1478816268645,
+        "tz": -180,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10006a1d",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10006a1d&format=geojson",
+        "felt": 5,
+        "cdi": 3.4,
+        "mmi": 3.56,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 593,
+        "net": "us",
+        "code": "10006a1d",
+        "ids": ",us10006a1d,gcmt20160804141511,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 2.097,
+        "rms": 1.03,
+        "gap": 20,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.2 - 49km WSW of La Quiaca, Argentina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.0078,
+          -22.3343,
+          270
+        ]
+      },
+      "id": "us10006a1d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "134km SSE of San Pedro de Atacama, Chile",
+        "time": 1469601828580,
+        "updated": 1478816260709,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006i18",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006i18&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 3.85,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 449,
+        "net": "us",
+        "code": "20006i18",
+        "ids": ",us20006i18,gcmt20160727064345,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.163,
+        "rms": 1.36,
+        "gap": 36,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.4 - 134km SSE of San Pedro de Atacama, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.7928,
+          -24.065,
+          121
+        ]
+      },
+      "id": "us20006i18"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.9,
+        "place": "Off the coast of Aisen, Chile",
+        "time": 1469582712940,
+        "updated": 1478816259574,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006hzu",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006hzu&format=geojson",
+        "felt": 1,
+        "cdi": 1,
+        "mmi": 0,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 536,
+        "net": "us",
+        "code": "20006hzu",
+        "ids": ",us20006hzu,gcmt20160727012512,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 4.117,
+        "rms": 1.32,
+        "gap": 53,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.9 - Off the coast of Aisen, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0594,
+          -44.4113,
+          10
+        ]
+      },
+      "id": "us20006hzu"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.1,
+        "place": "54km WNW of Diego de Almagro, Chile",
+        "time": 1469467610210,
+        "updated": 1478816253748,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006hi2",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006hi2&format=geojson",
+        "felt": 18,
+        "cdi": 6.4,
+        "mmi": 4.66,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 584,
+        "net": "us",
+        "code": "20006hi2",
+        "ids": ",us20006hi2,gcmt20160725172649,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.088,
+        "rms": 0.68,
+        "gap": 25,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.1 - 54km WNW of Diego de Almagro, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.5111,
+          -26.1067,
+          72
+        ]
+      },
+      "id": "us20006hi2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "120km ENE of San Pedro de Atacama, Chile",
+        "time": 1469312277370,
+        "updated": 1474757237040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006h58",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006h58&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 385,
+        "net": "us",
+        "code": "20006h58",
+        "ids": ",us20006h58,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.074,
+        "rms": 0.79,
+        "gap": 30,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.0 - 120km ENE of San Pedro de Atacama, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.1718,
+          -22.4116,
+          27.54
+        ]
+      },
+      "id": "us20006h58"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "Off the coast of Guerrero, Mexico",
+        "time": 1469263918790,
+        "updated": 1474757236040,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006h2e",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006h2e&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 0,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 465,
+        "net": "us",
+        "code": "20006h2e",
+        "ids": ",us20006h2e,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,losspager,nearby-cities,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 3.348,
+        "rms": 1.03,
+        "gap": 83,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.5 - Off the coast of Guerrero, Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.5251,
+          14.8899,
+          10
+        ]
+      },
+      "id": "us20006h2e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "2km SSE of Rocafuerte, Ecuador",
+        "time": 1468977623640,
+        "updated": 1474075671040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006g0u",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006g0u&format=geojson",
+        "felt": 6,
+        "cdi": 4,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 403,
+        "net": "us",
+        "code": "20006g0u",
+        "ids": ",us20006g0u,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.653,
+        "rms": 0.99,
+        "gap": 41,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.1 - 2km SSE of Rocafuerte, Ecuador"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.4271,
+          -0.9356,
+          10
+        ]
+      },
+      "id": "us20006g0u"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "13km WNW of Xalpatlahuac, Mexico",
+        "time": 1468935764700,
+        "updated": 1474075671040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006ft7",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006ft7&format=geojson",
+        "felt": 9,
+        "cdi": 3.4,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 403,
+        "net": "us",
+        "code": "20006ft7",
+        "ids": ",us20006ft7,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.175,
+        "rms": 0.91,
+        "gap": 46,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.1 - 13km WNW of Xalpatlahuac, Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.7382,
+          17.5,
+          44.21
+        ]
+      },
+      "id": "us20006ft7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.8,
+        "place": "69km WSW of Coquimbo, Chile",
+        "time": 1468905520260,
+        "updated": 1478816243326,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006fpn",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006fpn&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 4.58,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 518,
+        "net": "us",
+        "code": "20006fpn",
+        "ids": ",us20006fpn,gcmt20160719051840,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.511,
+        "rms": 1.44,
+        "gap": 82,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.8 - 69km WSW of Coquimbo, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9722,
+          -30.2523,
+          8.01
+        ]
+      },
+      "id": "us20006fpn"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "66km SW of Coquimbo, Chile",
+        "time": 1468832383390,
+        "updated": 1474075669040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006fhz",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006fhz&format=geojson",
+        "felt": 4,
+        "cdi": 3.8,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 386,
+        "net": "us",
+        "code": "20006fhz",
+        "ids": ",us20006fhz,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.372,
+        "rms": 1,
+        "gap": 52,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 5.0 - 66km SW of Coquimbo, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.8616,
+          -30.3561,
+          35
+        ]
+      },
+      "id": "us20006fhz"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.2,
+        "place": "59km WSW of Ovalle, Chile",
+        "time": 1468810730040,
+        "updated": 1474075669040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006fgd",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006fgd&format=geojson",
+        "felt": 5,
+        "cdi": 4.8,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 418,
+        "net": "us",
+        "code": "20006fgd",
+        "ids": ",us20006fgd,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.158,
+        "rms": 1.19,
+        "gap": 55,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 5.2 - 59km WSW of Ovalle, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.7935,
+          -30.7537,
+          23.97
+        ]
+      },
+      "id": "us20006fgd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.2,
+        "place": "17km SW of Hualmay, Peru",
+        "time": 1468805752630,
+        "updated": 1474075669040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006ffx",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006ffx&format=geojson",
+        "felt": 91,
+        "cdi": 4.8,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 460,
+        "net": "us",
+        "code": "20006ffx",
+        "ids": ",us20006ffx,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.172,
+        "rms": 1.3,
+        "gap": 75,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.2 - 17km SW of Hualmay, Peru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7367,
+          -11.2038,
+          75.42
+        ]
+      },
+      "id": "us20006ffx"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "46km NNE of Monteagudo, Bolivia",
+        "time": 1468531516890,
+        "updated": 1473299432040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006esd",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006esd&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 400,
+        "net": "us",
+        "code": "20006esd",
+        "ids": ",us20006esd,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 5.037,
+        "rms": 0.67,
+        "gap": 23,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.1 - 46km NNE of Monteagudo, Bolivia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.8598,
+          -19.4114,
+          588.41
+        ]
+      },
+      "id": "us20006esd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.3,
+        "place": "33km NW of Rosa Zarate, Ecuador",
+        "time": 1468203064800,
+        "updated": 1478816230794,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us100062hg",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100062hg&format=geojson",
+        "felt": 88,
+        "cdi": 6.4,
+        "mmi": 5.96,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 667,
+        "net": "us",
+        "code": "100062hg",
+        "ids": ",us100062hg,gcmt20160711021104,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.235,
+        "rms": 1.01,
+        "gap": 37,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.3 - 33km NW of Rosa Zarate, Ecuador"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.638,
+          0.5812,
+          21
+        ]
+      },
+      "id": "us100062hg"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.9,
+        "place": "33km NNW of Rosa Zarate, Ecuador",
+        "time": 1468202469950,
+        "updated": 1478816229655,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us100062hd",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100062hd&format=geojson",
+        "felt": 13,
+        "cdi": 4.3,
+        "mmi": 6.06,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 541,
+        "net": "us",
+        "code": "100062hd",
+        "ids": ",us100062hd,gcmt20160711020110,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.234,
+        "rms": 1.1,
+        "gap": 47,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.9 - 33km NNW of Rosa Zarate, Ecuador"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6358,
+          0.5874,
+          17
+        ]
+      },
+      "id": "us100062hd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.6,
+        "place": "Southeast of Easter Island",
+        "time": 1468117962440,
+        "updated": 1478816224010,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us100062b1",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100062b1&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 0,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 482,
+        "net": "us",
+        "code": "100062b1",
+        "ids": ",us100062b1,gcmt20160710023242,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 10.092,
+        "rms": 0.65,
+        "gap": 46,
+        "magType": "mwb",
+        "type": "earthquake",
+        "title": "M 5.6 - Southeast of Easter Island"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.2511,
+          -35.8108,
+          10
+        ]
+      },
+      "id": "us100062b1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "48km WNW of Bahia de Caraquez, Ecuador",
+        "time": 1467952123320,
+        "updated": 1473299422040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us100061tj",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100061tj&format=geojson",
+        "felt": 2,
+        "cdi": 2,
+        "mmi": 4.19,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 466,
+        "net": "us",
+        "code": "100061tj",
+        "ids": ",us100061tj,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 2.218,
+        "rms": 0.87,
+        "gap": 30,
+        "magType": "mwb",
+        "type": "earthquake",
+        "title": "M 5.5 - 48km WNW of Bahia de Caraquez, Ecuador"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8075,
+          -0.4071,
+          7.1
+        ]
+      },
+      "id": "us100061tj"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "Pacific-Antarctic Ridge",
+        "time": 1467947998320,
+        "updated": 1478816222849,
+        "tz": -540,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us100061ta",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us100061ta&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 449,
+        "net": "us",
+        "code": "100061ta",
+        "ids": ",us100061ta,gcmt20160708031958,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,moment-tensor,nearby-cities,origin,phase-data,",
+        "nst": null,
+        "dmin": 30.179,
+        "rms": 0.82,
+        "gap": 46,
+        "magType": "mwc",
+        "type": "earthquake",
+        "title": "M 5.4 - Pacific-Antarctic Ridge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -128.0328,
+          -55.2631,
+          10
+        ]
+      },
+      "id": "us100061ta"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "84km W of Iquique, Chile",
+        "time": 1467685743180,
+        "updated": 1472852198040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10005zyk",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10005zyk&format=geojson",
+        "felt": 1,
+        "cdi": 4.2,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 401,
+        "net": "us",
+        "code": "10005zyk",
+        "ids": ",us10005zyk,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.769,
+        "rms": 0.86,
+        "gap": 126,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.1 - 84km W of Iquique, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.9463,
+          -20.19,
+          11.13
+        ]
+      },
+      "id": "us10005zyk"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "8km SSE of Bijagua, Costa Rica",
+        "time": 1467512173100,
+        "updated": 1472852194040,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10005zjh",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10005zjh&format=geojson",
+        "felt": 2,
+        "cdi": 2.9,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 401,
+        "net": "us",
+        "code": "10005zjh",
+        "ids": ",us10005zjh,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.378,
+        "rms": 0.82,
+        "gap": 50,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.1 - 8km SSE of Bijagua, Costa Rica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.0317,
+          10.663,
+          7.41
+        ]
+      },
+      "id": "us10005zjh"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.3,
+        "place": "6km ENE of Fortuna, Costa Rica",
+        "time": 1467511112130,
+        "updated": 1472852194040,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us10005zjd",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us10005zjd&format=geojson",
+        "felt": 22,
+        "cdi": 6.1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 446,
+        "net": "us",
+        "code": "10005zjd",
+        "ids": ",us10005zjd,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.433,
+        "rms": 0.89,
+        "gap": 39,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.3 - 6km ENE of Fortuna, Costa Rica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.1375,
+          10.6872,
+          8.42
+        ]
+      },
+      "id": "us10005zjd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.7,
+        "place": "17km NNE of Pinotepa de Don Luis, Mexico",
+        "time": 1467060634740,
+        "updated": 1478816214700,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200067az",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200067az&format=geojson",
+        "felt": 51,
+        "cdi": 4.2,
+        "mmi": 5.63,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 521,
+        "net": "us",
+        "code": "200067az",
+        "ids": ",us200067az,gcmt20160627205034,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.227,
+        "rms": 0.8,
+        "gap": 72,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.7 - 17km NNE of Pinotepa de Don Luis, Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.8332,
+          16.5502,
+          19
+        ]
+      },
+      "id": "us200067az"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "29km SW of Illapel, Chile",
+        "time": 1467031873180,
+        "updated": 1472612899040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000676p",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us2000676p&format=geojson",
+        "felt": 6,
+        "cdi": 4.7,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 387,
+        "net": "us",
+        "code": "2000676p",
+        "ids": ",us2000676p,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.677,
+        "rms": 0.71,
+        "gap": 120,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.0 - 29km SW of Illapel, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4198,
+          -31.7806,
+          45.67
+        ]
+      },
+      "id": "us2000676p"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "96km NE of Diego de Almagro, Chile",
+        "time": 1466803759020,
+        "updated": 1478816209019,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200066n4",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200066n4&format=geojson",
+        "felt": 3,
+        "cdi": 3.8,
+        "mmi": 3.88,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 467,
+        "net": "us",
+        "code": "200066n4",
+        "ids": ",us200066n4,gcmt20160624212919,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.645,
+        "rms": 1.13,
+        "gap": 43,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.5 - 96km NE of Diego de Almagro, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.3417,
+          -25.7705,
+          118.96
+        ]
+      },
+      "id": "us200066n4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "47km W of Ovalle, Chile",
+        "time": 1466567680610,
+        "updated": 1472264134040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200065x1",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200065x1&format=geojson",
+        "felt": 1,
+        "cdi": 2,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 400,
+        "net": "us",
+        "code": "200065x1",
+        "ids": ",us200065x1,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.815,
+        "rms": 0.68,
+        "gap": 132,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.1 - 47km W of Ovalle, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.6921,
+          -30.6352,
+          26.01
+        ]
+      },
+      "id": "us200065x1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.1,
+        "place": "Northern Mid-Atlantic Ridge",
+        "time": 1466526394420,
+        "updated": 1478816204503,
+        "tz": -180,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200065s1",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200065s1&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 0,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 572,
+        "net": "us",
+        "code": "200065s1",
+        "ids": ",us200065s1,gcmt20160621162634,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 16.283,
+        "rms": 0.63,
+        "gap": 22,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.1 - Northern Mid-Atlantic Ridge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.1402,
+          22.6582,
+          10
+        ]
+      },
+      "id": "us200065s1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.7,
+        "place": "85km W of San Antonio de los Cobres, Argentina",
+        "time": 1466270986460,
+        "updated": 1478816197772,
+        "tz": -180,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000659j",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us2000659j&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 3.63,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 500,
+        "net": "us",
+        "code": "2000659j",
+        "ids": ",us2000659j,gcmt20160618172944,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.516,
+        "rms": 1.32,
+        "gap": 31,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.7 - 85km W of San Antonio de los Cobres, Argentina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.1526,
+          -24.1467,
+          186
+        ]
+      },
+      "id": "us2000659j"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "35km WSW of Pueblo Nuevo Tiquisate, Guatemala",
+        "time": 1465998415140,
+        "updated": 1478816194359,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200064ir",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200064ir&format=geojson",
+        "felt": 38,
+        "cdi": 5.2,
+        "mmi": 4.17,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 468,
+        "net": "us",
+        "code": "200064ir",
+        "ids": ",us200064ir,gcmt20160615134656,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.413,
+        "rms": 1.22,
+        "gap": 78,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.4 - 35km WSW of Pueblo Nuevo Tiquisate, Guatemala"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.6462,
+          14.1118,
+          61
+        ]
+      },
+      "id": "us200064ir"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.2,
+        "place": "16km ESE of Puerto Morazan, Nicaragua",
+        "time": 1465875929860,
+        "updated": 1472088175040,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006488",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006488&format=geojson",
+        "felt": 2,
+        "cdi": 4.1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 417,
+        "net": "us",
+        "code": "20006488",
+        "ids": ",us20006488,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.102,
+        "rms": 0.74,
+        "gap": 58,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.2 - 16km ESE of Puerto Morazan, Nicaragua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.0309,
+          12.7973,
+          12.23
+        ]
+      },
+      "id": "us20006488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.7,
+        "place": "Central East Pacific Rise",
+        "time": 1465779579890,
+        "updated": 1478816187026,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000640t",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us2000640t&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 500,
+        "net": "us",
+        "code": "2000640t",
+        "ids": ",us2000640t,gcmt20160613005939,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,moment-tensor,nearby-cities,origin,phase-data,",
+        "nst": null,
+        "dmin": 14.98,
+        "rms": 0.88,
+        "gap": 84,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.7 - Central East Pacific Rise"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8111,
+          -4.4284,
+          10
+        ]
+      },
+      "id": "us2000640t"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.2,
+        "place": "21km S of Somotillo, Nicaragua",
+        "time": 1465529286950,
+        "updated": 1472088169040,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200063d2",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200063d2&format=geojson",
+        "felt": 1,
+        "cdi": 2,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 416,
+        "net": "us",
+        "code": "200063d2",
+        "ids": ",us200063d2,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.191,
+        "rms": 1.31,
+        "gap": 76,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.2 - 21km S of Somotillo, Nicaragua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9401,
+          12.8555,
+          10
+        ]
+      },
+      "id": "us200063d2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.1,
+        "place": "22km E of Puerto Morazan, Nicaragua",
+        "time": 1465529122920,
+        "updated": 1478816182456,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200063cy",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200063cy&format=geojson",
+        "felt": 120,
+        "cdi": 6.6,
+        "mmi": 7.5,
+        "alert": "yellow",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 729,
+        "net": "us",
+        "code": "200063cy",
+        "ids": ",us200063cy,gcmt20160610032522,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.159,
+        "rms": 1.04,
+        "gap": 39,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.1 - 22km E of Puerto Morazan, Nicaragua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.9633,
+          12.8318,
+          10
+        ]
+      },
+      "id": "us200063cy"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.2,
+        "place": "45km S of Puerto San Jose, Guatemala",
+        "time": 1465382307510,
+        "updated": 1471480595040,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200062rb",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200062rb&format=geojson",
+        "felt": 6,
+        "cdi": 3.4,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 418,
+        "net": "us",
+        "code": "200062rb",
+        "ids": ",us200062rb,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.275,
+        "rms": 1.21,
+        "gap": 122,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.2 - 45km S of Puerto San Jose, Guatemala"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.8786,
+          13.5196,
+          35
+        ]
+      },
+      "id": "us200062rb"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.9,
+        "place": "Central East Pacific Rise",
+        "time": 1465374699780,
+        "updated": 1478816180236,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200062qw",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200062qw&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 0,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 536,
+        "net": "us",
+        "code": "200062qw",
+        "ids": ",us200062qw,gcmt20160608083139,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,",
+        "nst": null,
+        "dmin": 14.645,
+        "rms": 0.79,
+        "gap": 111,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.9 - Central East Pacific Rise"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.5531,
+          -4.061,
+          10
+        ]
+      },
+      "id": "us200062qw"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "95km SW of San Patricio, Mexico",
+        "time": 1465297080050,
+        "updated": 1478816177996,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200062i7",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200062i7&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 3.43,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 465,
+        "net": "us",
+        "code": "200062i7",
+        "ids": ",us200062i7,gcmt20160607105801,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.332,
+        "rms": 0.95,
+        "gap": 131,
+        "magType": "mwc",
+        "type": "earthquake",
+        "title": "M 5.5 - 95km SW of San Patricio, Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.2031,
+          18.5036,
+          10
+        ]
+      },
+      "id": "us200062i7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 6.3,
+        "place": "106km SSW of San Patricio, Mexico",
+        "time": 1465296697720,
+        "updated": 1478816176892,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200062i1",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200062i1&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 4,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 611,
+        "net": "us",
+        "code": "200062i1",
+        "ids": ",us200062i1,gcmt20160607105138,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 1.383,
+        "rms": 1,
+        "gap": 56,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 6.3 - 106km SSW of San Patricio, Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.1731,
+          18.3637,
+          10
+        ]
+      },
+      "id": "us200062i1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "21km SW of Coquimbo, Chile",
+        "time": 1465219319190,
+        "updated": 1478816174554,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200062by",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200062by&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 4,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 449,
+        "net": "us",
+        "code": "200062by",
+        "ids": ",us200062by,gcmt20160606132158,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.289,
+        "rms": 0.72,
+        "gap": 69,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.4 - 21km SW of Coquimbo, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5238,
+          -30.069,
+          29.5
+        ]
+      },
+      "id": "us200062by"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.5,
+        "place": "15km SW of Coquimbo, Chile",
+        "time": 1465218962220,
+        "updated": 1471480592040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us200062bu",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us200062bu&format=geojson",
+        "felt": 3,
+        "cdi": 3.1,
+        "mmi": 4.69,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 466,
+        "net": "us",
+        "code": "200062bu",
+        "ids": ",us200062bu,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.231,
+        "rms": 0.79,
+        "gap": 60,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.5 - 15km SW of Coquimbo, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4636,
+          -30.0433,
+          28.31
+        ]
+      },
+      "id": "us200062bu"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "Central East Pacific Rise",
+        "time": 1465162956130,
+        "updated": 1471480591040,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000628j",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us2000628j&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 385,
+        "net": "us",
+        "code": "2000628j",
+        "ids": ",us2000628j,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,nearby-cities,origin,phase-data,",
+        "nst": null,
+        "dmin": 17.575,
+        "rms": 1.32,
+        "gap": 99,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 5.0 - Central East Pacific Rise"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.8836,
+          -9.4659,
+          10
+        ]
+      },
+      "id": "us2000628j"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5,
+        "place": "11km WSW of Canoas, Costa Rica",
+        "time": 1465161630250,
+        "updated": 1471480591040,
+        "tz": -360,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000628g",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us2000628g&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 385,
+        "net": "us",
+        "code": "2000628g",
+        "ids": ",us2000628g,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.09,
+        "rms": 0.78,
+        "gap": 163,
+        "magType": "mwr",
+        "type": "earthquake",
+        "title": "M 5.0 - 11km WSW of Canoas, Costa Rica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.9374,
+          8.5093,
+          24.03
+        ]
+      },
+      "id": "us2000628g"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "145km SSE of Putre, Chile",
+        "time": 1465139133750,
+        "updated": 1471480591040,
+        "tz": -240,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000626c",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us2000626c&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 400,
+        "net": "us",
+        "code": "2000626c",
+        "ids": ",us2000626c,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.684,
+        "rms": 0.74,
+        "gap": 64,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.1 - 145km SSE of Putre, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.0325,
+          -19.4083,
+          97.17
+        ]
+      },
+      "id": "us2000626c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.8,
+        "place": "84km NW of Coquimbo, Chile",
+        "time": 1465105871550,
+        "updated": 1478816170096,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20006257",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20006257&format=geojson",
+        "felt": 3,
+        "cdi": 3.6,
+        "mmi": 4.85,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 519,
+        "net": "us",
+        "code": "20006257",
+        "ids": ",us20006257,gcmt20160605055109,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,impact-text,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 0.788,
+        "rms": 1,
+        "gap": 72,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.8 - 84km NW of Coquimbo, Chile"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.8594,
+          -29.3424,
+          28
+        ]
+      },
+      "id": "us20006257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.1,
+        "place": "80km SE of Acari, Peru",
+        "time": 1465099625560,
+        "updated": 1471480591040,
+        "tz": -300,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us2000624v",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us2000624v&format=geojson",
+        "felt": 1,
+        "cdi": 3.8,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 401,
+        "net": "us",
+        "code": "2000624v",
+        "ids": ",us2000624v,",
+        "sources": ",us,",
+        "types": ",cap,dyfi,geoserve,impact-text,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 4.323,
+        "rms": 0.86,
+        "gap": 121,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.1 - 80km SE of Acari, Peru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1037,
+          -15.9573,
+          37.33
+        ]
+      },
+      "id": "us2000624v"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.8,
+        "place": "178km SW of San Patricio, Mexico",
+        "time": 1464834185910,
+        "updated": 1478816167856,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20005zv0",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20005zv0&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": 3.42,
+        "alert": "green",
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 518,
+        "net": "us",
+        "code": "20005zv0",
+        "ids": ",us20005zv0,gcmt20160602022311,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,losspager,moment-tensor,nearby-cities,origin,phase-data,shakemap,tectonic-summary,",
+        "nst": null,
+        "dmin": 2.094,
+        "rms": 1.07,
+        "gap": 74,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.8 - 178km SW of San Patricio, Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.8338,
+          18.0217,
+          10
+        ]
+      },
+      "id": "us20005zv0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.4,
+        "place": "183km SW of San Patricio, Mexico",
+        "time": 1464769821330,
+        "updated": 1478816164567,
+        "tz": -420,
+        "url": "http://earthquake.usgs.gov/earthquakes/eventpage/us20005zjp",
+        "detail": "http://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us20005zjp&format=geojson",
+        "felt": 0,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 449,
+        "net": "us",
+        "code": "20005zjp",
+        "ids": ",us20005zjp,gcmt20160601083029,",
+        "sources": ",us,gcmt,",
+        "types": ",cap,dyfi,geoserve,moment-tensor,nearby-cities,origin,phase-data,tectonic-summary,",
+        "nst": null,
+        "dmin": 2.108,
+        "rms": 1.37,
+        "gap": 104,
+        "magType": "mww",
+        "type": "earthquake",
+        "title": "M 5.4 - 183km SW of San Patricio, Mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.7719,
+          17.9129,
+          10
+        ]
+      },
+      "id": "us20005zjp"
+    }
+  ],
+  "bbox": [
+    -128.0328,
+    -55.9035,
+    7.1,
+    -45.1055,
+    22.6582,
+    588.41
+  ]
+}

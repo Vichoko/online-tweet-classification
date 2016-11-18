@@ -3,15 +3,34 @@ class Date:
         """ string example:
         "2016-08-18T18:09:43"
         """
-        date = string.split('T')[0].split('-')
-        clock = string.split('T')[1].split(':')
+        if string == "":
+            self.year = None
+            self.month = None
+            self.day = None
+            self.hour = None
+            self.minute = None
+            self.second = None
 
-        self.year = int(date[0])
-        self.month = int(date[1])
-        self.day = int(date[2])
-        self.hour = int(clock[0])
-        self.minute = int(clock[1])
-        self.sec = int(clock[2])
+        else:
+            date = string.split('T')[0].split('-')
+            clock = string.split('T')[1].split(':')
+
+            self.year = int(date[0])
+            self.month = int(date[1])
+            self.day = int(date[2])
+            self.hour = int(clock[0])
+            self.minute = int(clock[1])
+            self.second = int(clock[2])
+
+
+    def import_timedate_or_Date(self, td):
+        self.year = td.year
+        self.month = td.month
+        self.day = td.day
+        self.hour = td.hour
+        self.minute = td.minute
+        self.second = td.second
+
 
     def compare_to(self, other_date):
         ''' Devuelve 1 si esta instancia es mas vieja que la otra.
@@ -43,9 +62,9 @@ class Date:
                         elif self.minute < other_date.minute:
                             return -1
                         else:
-                            if self.sec > other_date.sec:
+                            if self.second > other_date.sec:
                                 return 1
-                            elif self.sec < other_date.sec:
+                            elif self.second < other_date.sec:
                                 return -1
                             else:
                                 return 0
@@ -59,6 +78,13 @@ class Date:
             assert self.hour < 24
 
         return self
+
+
+def attr_to_string(x):
+    if x < 10:
+        return '0'+str(x)
+    return str(x)
+
 
 if __name__ == "__main__":
     print("Tests de Date")
@@ -86,3 +112,4 @@ if __name__ == "__main__":
     assert tweet_date.compare_to(Date("2016-06-07T10:55:37")) == tweet_date.compare_to(limit_date)
     assert tweet_date.compare_to(limit_date) > 0
     print("Passed example test")
+
