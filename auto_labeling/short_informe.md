@@ -15,7 +15,7 @@ Se exportaron datos de Tweets  de SQL a formato JSON filtrando por:
 	* Con fecha de emision en torno a 1 hora del momento de ocurrencia de un evento sismologico grado 6 o más pasado.
 	
 Se tomaron los tweets emitidos desde el momento del evento sismico hasta 4 minutos después del comienzo del evento y se etiquetaron como 
-`class = 1`, es decir, como 'Alerta en Tiempo Real'
+`class = 1`, es decir, como 'Alerta en Tiempo Real', dejando estos tweets en el archivo `./json/tweets_etiquetados/class1_tweets.json`
 
 ## Etiquetado como 'No Alerta en tiempo real' [AUN NO IMPLEMENTADO]
 ### Pre-procesamiento de datos
@@ -25,6 +25,6 @@ Se exportaron datos de Tweets  de SQL a formato JSON filtrando por:
 	* Con palabras claves de sismos
 	* Con fecha de emision lejana a cualquier evento sismico en el mundo de grado 4 o más.
 	
-Se tomaron todos estos tweets y se etiquetaron como `class 2`
+Se tomaron todos estos tweets y se etiquetaron como `class 0` o 'No alerta', dejando estos tweets en el archivo `./json/tweets_etiquetados/class0_tweets.json`
 
 
