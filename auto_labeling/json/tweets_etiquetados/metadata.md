@@ -15,6 +15,10 @@ Contienen los tweets etiquetados con ```pyscripts/labeler.py```.
 *   "rt_count": 0,
 *   "class": 1
 
+## Unicode capped chars
+Caracteres ```\u00x``` se ven asi en el JSON, al importarlos con python se codifican bien.
+
+
 ## Importar con Python
 ```python
 import json
