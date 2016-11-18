@@ -23,7 +23,7 @@ Caracteres ```\u00x``` se ven asi en el JSON, al importarlos con python se codif
 ```python
 import json
 
-d = {'file': "test2"}
+d = {'file': "class1_tweets.json"}
 
 with open("./real-time-twit/auto_labeling/json/tweets_sismos/" + d['file'] + ".json", "r") as readfile:
     data = json.load(readfile)
