@@ -105,7 +105,7 @@ for event in events:
 
 
 j = json.dumps(row_array)
-objects_file = "test2" + ".json"
+objects_file = "class1_tweets" + ".json"
 f = open(objects_file, 'w')
 print >> f, j
 print("	done")
