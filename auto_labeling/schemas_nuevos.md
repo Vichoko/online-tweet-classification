@@ -100,3 +100,35 @@ description
 support
 
 ```
+
+# Schema sismologia:
+	time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+
+
+## Ejemplo:
+	2010-02-27T06:34:11.530Z,-36.122,-72.898,22.9,8.8,mwc,454,17.8,,1.09,us,usp000h7rf,2016-05-03T15:30:47.329Z,"offshore Bio-Bio, Chile",earthquake,,9.2,,,reviewed,us,us
+
+
+## Atributos relevantes:
+	* time: yyyy-mm-dd'T'hh:mm:ss.sss'Z'
+	* mag: Float, Richter
+	* depth: Float, Kms
+	* place: str
+
+## Atributos descartados:
+	* magType
+	* nst
+	* gap 
+	* dmin 
+	* rmd 
+	* net 
+	* id 
+	* updated
+	* type
+	* hortizontalError,
+	* depthError
+	* magError
+	* magNst
+	* status
+	* locationSource
+	* magSource

@@ -1,19 +1,32 @@
-import pyodbc
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import pymysql
 import json
 import collections
 
 class sql_to_json:
-	def __init__(self, servername, dbname):
-		#constr = 'DRIVER={MySQL};SERVER=' + servername + ";DATABASE=" + dbname + ';'
-		constr = "DRIVER={MySQL ODBC 5.3 Unicode Driver};Login Prompt=False;UID=root;Password=;Data Source="+servername+";Database="+dbname
-		conn = pyodbc.connect(constr)
-		self.cursor = conn.cursor()
+	def __init__(self, address, user, pw):
+		self.address = address
+		self.user = user
+		self.pw = pw
+		self.db = None
+		self.conn = None
+		self.cursor = None
+		
+	def connect_db(self, dbname):
+		print("conectan2 to " + dbname + "...")
+		self.conn = pymysql.connect(host=self.address, user=self.user, passwd=self.pw, db=dbname, charset='utf8mb4')
+		print("	done")
+		self.cursor = self.conn.cursor()
 	
 	def query_tweets(self, query, filename, enable_row_array = 0, enable_k_v = 1):
+		print("Executing query...")
 		self.cursor.execute(query)
-		rows = self.cursor.fetchall()
+		print(" done")
 
-		if enable_row_array:
+		if False:
+		# @NON-FUNCTIONAL
 			# Convert query to row arrays
 			rowarray_list = []
 			for row in rows:
@@ -27,38 +40,156 @@ class sql_to_json:
 			print >> f, j
 			
 		if enable_k_v:
-		# Convert query to objects of key-value pairs
+			print("exporting to JSON...")
 			objects_list = []
-			for row in rows:
+			
+			for row in self.cursor:
 				d = collections.OrderedDict()
-				d['download_date'] = row.download_date
-				d['creation_date'] = row.creation_date
-				d['id_user'] = row.id_user
-				d['favorited'] = row.favorited
-				d['lang_tweet'] = row.lang_tweet
-				d['text_tweet'] = row.text_tweet
-				d['rt'] = row.rt
-				d['rt_count'] = row.rt_count
-				d['has_keyword'] = row.has_keyword
+				# Atributos escogidos 
+				d['download_date'] = row[1]
+				d['creation_date'] = row[2]
+				d['id_user'] = row[5]
+				d['favorited'] = row[7]
+				d['lang_tweet'] = row[10]
+				d['text_tweet'] = row[11]
+				d['rt'] = row[12]
+				d['rt_count'] = row[13]
+				d['has_keyword'] = row[19]
 				
 				objects_list.append(d)
-			 
-			j = json.dumps(objects_list)
-			objects_file = filename + "_dicts"
+				# print(row[11].decode('latin1')) <- Se ven bien con este encoding
+		
+				
+			print("got list of dict")
+			print("building outfile...")
+			def date_handler(obj):
+				# Esto es para que las fechas no tiren error
+				if hasattr(obj, 'isoformat'):
+					return obj.isoformat()
+				else:
+					raise TypeError
+
+
+			j = json.dumps(objects_list, default=date_handler)
+			objects_file = filename + ".json"
 			f = open(objects_file,'w')
 			print >> f, j
-			 
-			conn.close()
+			print("	done")
+
+	def mult_query_tweets(self, dbname, queries):
+		self.connect_db(dbname)
+		print("starting multiple queries")
+		for i in range(len(queries)):
+			query = queries[i]
+			self.query_tweets(query, filename=dbname+str(i))
+			
+		self.close()
+		return
+
+	def close(self):
+		self.cursor.close()
+		self.conn.close()
+		return
 		
 		
+def extract_tweets_around_sismic_events_espanol():
+	'''
+	Extractor de Tweets en torno a una hora de la ocurrencia de eventos sismiscos con magnitud +6 
+	Para los meses Jun, Jul y Ago del 2016
+	'''
+	manager = sql_to_json("localhost",'root', '')
+	
+	
+	#  Sismos de Junio en areas de habla hispana
+	"""
+		2016-06-07T10:51:37.720Z,18.3637,-105.1731,10,6.3,mww,,56,1.383,1,us,us200062i1,2016-11-10T22:16:16.892Z,"106km SSW of San Patricio, Mexico",earthquake,5.5,1.7,,,reviewed,us,us
+		2016-06-10T03:25:22.920Z,12.8318,-86.9633,10,6.1,mww,,39,0.159,1.04,us,us200063cy,2016-11-10T22:16:22.456Z,"22km E of Puerto Morazan, Nicaragua",earthquake,5.3,1.7,,,reviewed,us,us
+	"""
+	''' 
+		Evento 1: 2016-06-07 10:51:37 Magnitud: 6.3 Mexico
+		Evento 2: 2016-06-10 03:25:22 Magnitud: 6.1 Nicaragua
+		'''
+	database = "tweetsjun2016"
+	queries = [
+		""" 
+		SELECT * FROM 20160607_tweets
+		WHERE 20160607_tweets.creation_date >= '2016-06-07 9:51'
+		AND 20160607_tweets.creation_date <= '2016-06-07 11:51'
+		AND 20160607_tweets.lang_tweet = "es"
+		AND 20160607_tweets.has_keyword = 1
+		AND 20160607_tweets.rt = 0
+		""",
+		""" 
+		SELECT * FROM 20160610_tweets
+		WHERE 20160610_tweets.creation_date >= '2016-06-10 02:25'
+		AND 20160610_tweets.creation_date <= '2016-06-10 04:25'
+		AND 20160610_tweets.lang_tweet = "es"
+		AND 20160610_tweets.has_keyword = 1
+		AND 20160610_tweets.rt = 0
+		"""
+	]
+	manager.mult_query_tweets(database, queries)
+	
+	
+	#  Sismos de Julio en areas de habla hispana
+	"""
+		2016-07-11T02:11:04.800Z,0.5812,-79.638,21,6.3,mww,,37,1.235,1.01,us,us100062hg,2016-11-10T22:17:10.794Z,"33km NW of Rosa Zarate, Ecuador",earthquake,4.4,1.5,,,reviewed,us,us
+		2016-07-25T17:26:50.210Z,-26.1067,-70.5111,72,6.1,mww,,25,0.088,0.68,us,us20006hi2,2016-11-10T22:17:33.748Z,"54km WNW of Diego de Almagro, Chile",earthquake,4.9,1.7,,,reviewed,us,us
+		"""
+	''' 
+		Evento 1: 2016-07-11 02:11:04 Magnitud: 6.3 Ecuador
+		Evento 2: 2016-07-25 17:26:50 Magnitud: 6.1 Chile
+	'''
+	database = "tweetsjul2016"
+	queries = [
+		""" 
+		SELECT * FROM 20160711_tweets
+		WHERE 20160711_tweets.creation_date >= '2016-07-11 01:11'
+		AND 20160711_tweets.creation_date <= '2016-07-11 03:11'
+		AND 20160711_tweets.lang_tweet = "es"
+		AND 20160711_tweets.has_keyword = 1
+		AND 20160711_tweets.rt = 0
+		""",
+		""" 
+		SELECT * FROM 20160725_tweets
+		WHERE 20160725_tweets.creation_date >= '2016-07-25 16:26'
+		AND 20160725_tweets.creation_date <= '2016-07-25 19:26'
+		AND 20160725_tweets.lang_tweet = "es"
+		AND 20160725_tweets.has_keyword = 1
+		AND 20160725_tweets.rt = 0
+		"""
+	]
+	manager.mult_query_tweets(database, queries)
+	
+	
+	#  Sismos de Agosto en areas de habla hispana
+	"""
+		2016-08-04T14:15:12.930Z,-22.3343,-66.0078,270,6.2,mww,,20,2.097,1.03,us,us10006a1d,2016-11-10T22:17:48.645Z,"49km WSW of La Quiaca, Argentina",earthquake,7.5,1.9,,,reviewed,us,us
+		2016-08-18T18:09:43.940Z,-55.9035,-123.2414,10,6,mww,,50,27.905,0.95,us,us10006esj,2016-11-15T02:21:53.040Z,"Southern East Pacific Rise",earthquake,7.7,1.7,,,reviewed,us,us
+	"""
+	''' 
+		Evento 1: 2016-08-04 14:15:12 Magnitud: 6.2 Argentina
+		Evento 2: 2016-08-18 18:09:43 Magnitud: 6.0 Sur-Este del Oceano Pacifico
+	'''
+	database = "tweetsago2016"
+	queries = [	
+		""" 
+		SELECT * FROM 20160804_tweets
+		WHERE 20160804_tweets.creation_date >= '2016-08-04 13:15'
+		AND 20160804_tweets.creation_date <= '2016-08-04 15:15'
+		AND 20160804_tweets.lang_tweet = "es"
+		AND 20160804_tweets.has_keyword = 1
+		AND 20160804_tweets.rt = 0
+		""",
+		""" 
+		SELECT * FROM 20160818_tweets
+		WHERE 20160818_tweets.creation_date >= '2016-08-18 17:09'
+		AND 20160818_tweets.creation_date <= '2016-08-18 19:09'
+		AND 20160818_tweets.lang_tweet = "es"
+		AND 20160818_tweets.has_keyword = 1
+		AND 20160818_tweets.rt = 0
+		"""]
+	manager.mult_query_tweets(database, queries)
+	
 if __name__=="__main__":
-	a = sql_to_json("localhost", "tweetsjun2016")
-	query = """ 
-			SELECT * FROM 20160607_tweets
-			WHERE 20160607_tweets.creation_date >= '2016-06-07 10:51'
-			AND 20160607_tweets.creation_date <= '2016-06-07 11:51'
-			AND 20160607_tweets.lang_tweet = "es"
-			AND 20160607_tweets.has_keyword = 1
-			AND 20160607_tweets.rt = 0
-			"""
-	a.query_tweets(query, "test")
+	extract_tweets_around_sismic_events_espanol()

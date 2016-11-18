@@ -1,0 +1,53 @@
+* extraer eventos sismologicos
+		Latitud inicial (Ej: -21.0)	
+	-16
+	Latitud final (Ej: -27.0)	
+	-57
+	Longitud inicial (Ej: -72.0)	
+	-112
+	Longitud final (Ej: -69.0)	
+	-66
+	Profundidad inicial (Ej: 0)	
+	0
+	Profundidad final (Ej: 100)	
+	200
+	Año inicial (Ej: 2012)	
+	2010
+	Año final (Ej: 2012)	
+	2016
+	Mes inicial (Ej: 01)	
+	01
+	Mes final (Ej: 02)	
+	10
+	Dia inicial (Ej: 10)	
+	01
+	Dia final (Ej: 01)	
+	01
+	Magnitud inicial (Ej: 0)	
+	
+	6
+	Magnitud final (Ej: 9)	
+	10
+	
+	
+	2010 01 01
+	2010 05 01
+	2010 05 02
+	
+	* No funciona el sistema de consultas de datos sismologicos. Mail enviado.
+	2010 
+
+	* Logre contactar CSN, esperando datos...
+	
+# Pormientras descargar twits cercanos a eventos conocidos.
+* Eventos: 
+	1. 2014-04-01 20:46 Norte de Chile
+		Se extraeran twits de 2 días antes y 2 días despues que contengan las palabras claves (En total 5 días de twits).
+		Parece que el 2 de abril hubo un terremoto en japon q desvirtua el analisis.
+		
+	2. 2015-09-16 22:54:32 48km W of Illapel, Chile
+	
+	
+	* Nube de palabras sobre twits
+	
+	

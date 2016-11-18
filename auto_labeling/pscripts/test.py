@@ -1,8 +1,10 @@
 #!/usr/bin/env python
-from __future__ import print_function
+# -*- coding: utf-8 -*-
+
 
 import pymysql
 import collections
+import json
 
 conn = pymysql.connect(host='localhost', user='root', passwd='', db='tweetsjun2016')
 
@@ -18,27 +20,36 @@ cur.execute("""
 			LIMIT 20
 			""")
 
-print(cur.description)
+#print(cur.description)
 
 print("kakita")
 
 objects_list = []
 for row in cur:
 	d = collections.OrderedDict()
-	d['download_date'] = row.download_date
-	d['creation_date'] = row.creation_date
-	d['id_user'] = row.id_user
-	d['favorited'] = row.favorited
-	d['lang_tweet'] = row.lang_tweet
-	d['text_tweet'] = row.text_tweet
-	d['rt'] = row.rt
-	d['rt_count'] = row.rt_count
-	d['has_keyword'] = row.has_keyword
+	d['download_date'] = row[1]
+	d['creation_date'] = row[2]
+	d['id_user'] = row[5]
+	d['favorited'] = row[7]
+	d['lang_tweet'] = row[10]
+	d['text_tweet'] = row[11].decode('latin1')
+	d['rt'] = row[12]
+	d['rt_count'] = row[13]
+	d['has_keyword'] = row[19]
 	
 	objects_list.append(d)
- 
-j = json.dumps(objects_list)
-objects_file = filename + "_dicts"
+	print(row[11].decode('latin1'))
+	
+	
+def date_handler(obj):
+	if hasattr(obj, 'isoformat'):
+		return obj.isoformat()
+	else:
+		raise TypeError
+
+
+j = json.dumps(objects_list, default=date_handler, encoding='latin1')
+objects_file = "test23" + "_dicts"
 f = open(objects_file,'w')
 print >> f, j
 
