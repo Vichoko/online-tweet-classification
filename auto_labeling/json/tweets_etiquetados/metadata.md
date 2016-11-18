@@ -29,6 +29,7 @@ with open("./real-time-twit/auto_labeling/json/tweets_sismos/" + d['file'] + ".j
     data = json.load(readfile)
 
 print(data[0][u'text_tweet'])
+# > Recuerdo un día de, *llamada a la 1:45*, "Micho... Que me muero.!!"
 
 # data es una lista de dict
 # keys del dict son los del schema pero los strings son unicode, tienen una u antes de las '': u'download_date', u'rt', etc.
