@@ -53,10 +53,36 @@ class Date:
     def sum_minutes(self, minutes):
         assert minutes < 60
         self.minute += minutes
-        if not self.minute >= 60:
+        if self.minute >= 60:
             self.minute -= 60
             self.hour += 1
             assert self.hour < 24
 
         return self
 
+if __name__ == "__main__":
+    print("Tests de Date")
+
+
+    date1 = Date("2015-06-07T10:51:37")
+    date2 = Date("2016-06-07T10:51:37")
+    date3 = Date("2016-06-07T10:60:67")
+    date4 = Date("2015-07-10T10:51:37")
+    date5 = Date("2015-07-10T10:40:37")
+    date6 = Date("2015-06-07T10:51:37").sum_minutes(4)
+
+    assert date1.compare_to(date2) < 0
+    assert date2.compare_to(date3) < 0
+    assert date3.compare_to(date2) > 0
+    assert date4.compare_to(date5) > 0
+    assert date1.compare_to(date1) == date2.compare_to(date2)
+    assert date5.compare_to(date4) < 0
+    assert date1.compare_to(date6) < 0
+    print("Passed all")
+    print("Example test")
+    event_time = Date("2016-06-07T10:51:37")
+    limit_date = Date("2016-06-07T10:51:37").sum_minutes(4) # "2016-06-07T10:55:37"
+    tweet_date = Date("2016-06-07T10:57:53")
+    assert tweet_date.compare_to(Date("2016-06-07T10:55:37")) == tweet_date.compare_to(limit_date)
+    assert tweet_date.compare_to(limit_date) > 0
+    print("Passed example test")

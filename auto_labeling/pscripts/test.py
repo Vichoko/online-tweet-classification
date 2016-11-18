@@ -6,7 +6,7 @@ import pymysql
 import collections
 import json
 
-conn = pymysql.connect(host='localhost', user='root', passwd='', db='tweetsjun2016')
+conn = pymysql.connect(host='localhost', user='root', passwd='', db='tweetsjun2016', charset = 'utf8mb4')
 
 cur = conn.cursor()
 
@@ -17,7 +17,7 @@ cur.execute("""
 			AND 20160607_tweets.lang_tweet = "es"
 			AND 20160607_tweets.has_keyword = 1
 			AND 20160607_tweets.rt = 0
-			LIMIT 20
+			LIMIT 5
 			""")
 
 #print(cur.description)
@@ -25,21 +25,19 @@ cur.execute("""
 print("kakita")
 
 objects_list = []
+
 for row in cur:
 	d = collections.OrderedDict()
-	d['download_date'] = row[1]
-	d['creation_date'] = row[2]
-	d['id_user'] = row[5]
-	d['favorited'] = row[7]
-	d['lang_tweet'] = row[10]
+	print("without decoding: " + row[11])
+	print("with latin1 decoding: " + row[11].decode('latin1'))
 	d['text_tweet'] = row[11].decode('latin1')
 	d['rt'] = row[12]
 	d['rt_count'] = row[13]
 	d['has_keyword'] = row[19]
 	
 	objects_list.append(d)
-	print(row[11].decode('latin1'))
-	
+
+
 	
 def date_handler(obj):
 	if hasattr(obj, 'isoformat'):
