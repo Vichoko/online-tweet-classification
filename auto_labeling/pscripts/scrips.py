@@ -8,24 +8,25 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import glob
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import SGDClassifier
+from sklearn.naive_bayes import GaussianNB
 from sklearn import cross_validation
 from sklearn.cross_validation import KFold
 import time
 from sklearn.feature_extraction import DictVectorizer
-os.chdir('/Users/Seba/R-Proyects/Data Mining CC/Tarea 2')
 #----------------------------------------------------------------------
 
 emergency = []
 non_emergency = []
 #---------------------------------- Leemos datos y almacenamos en arreglos
-with open('class1_tweets.json') as data_file:    
+with open('class1_tweets.json') as data_file:
     data = json.load(data_file)
     for tweet in data:
         text = tweet['text_tweet']
         text_clean = re.sub(r'[^\w]', ' ', text)
         emergency.append(text_clean)
-        
-with open('class0_tweets.json') as data_file:    
+
+with open('class0_tweets.json') as data_file:
     data = json.load(data_file)
     for tweet in data:
         text = tweet['text_tweet']
@@ -49,9 +50,13 @@ X_test = X[2000:, :]
 #---------------------------------------- Seleccion de clasificadores
 svm = SVC()
 logistic_regression = LogisticRegression()
+SGD = SGDClassifier(loss="hinge", penalty="l2")
+gnb = GaussianNB()
+
 classifiers = {
 	"Support vector machine": svm,
-	"Logistic regression": logistic_regression
+	"Logistic regression": logistic_regression,
+    "Stochastic Gradient Descent": SGD,
 }
 performances = {}
 time_0 = time.time()
@@ -59,16 +64,17 @@ n_folds = 10
 print ("Evaluating models")
 #--------------------------------------Entrenamiento
 for name, classifier in classifiers.items():
-	performance = []
-	fold_indices_generator = KFold(X_train.shape[0], n_folds=n_folds)
-	for (train, test) in fold_indices_generator:
-		classifier.fit(X_train[train], y_train[train])
-		performance.append(classifier.score(X_train[test], y_train[test]))
-	performances[name] = np.mean(performance)
-	print ("%s: %s" % (name, performances[name]))
+
+    performance = []
+    fold_indices_generator = KFold(X_train.shape[0], n_folds=n_folds)
+    for (train, test) in fold_indices_generator:
+        classifier.fit(X_train[train], y_train[train])
+        performance.append(classifier.score(X_train[test], y_train[test]))
+        performances[name] = np.mean(performance)
+    print ("%s: %s" % (name, performances[name]))
 time_f = time.time()
 print('time')
-print(time_f - time_0)   
+print(time_f - time_0)
 
 max_performance = max(performances.values())
 best_classifier_name = [name for (name, classifier) in classifiers.items() if performances[name] == max_performance][0] #Con esto elegimos el clasificador con la mayor performance
